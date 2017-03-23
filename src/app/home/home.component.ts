@@ -40,6 +40,39 @@ export class HomeComponent {
     {image: '/assets/img/cards/character.png'},
   ];
 
+  public row4 = [
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+  ];
+  public row5 = [
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png', kneel: true},
+    {image: '/assets/img/cards/character.png'},
+  ];
+  public row6 = [
+    {image: '/assets/img/cards/character.png', kneel: true},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+    {image: '/assets/img/cards/character.png'},
+  ];
+
   constructor(private sanitizer: DomSanitizer) {
     this.onResize();
   }

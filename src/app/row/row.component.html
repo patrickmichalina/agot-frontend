@@ -1,0 +1,4 @@
+<div class="card-container" [style.right]="getLeft(cards, i)" (click)="switchKneel(cards, i)" [ngClass]="{'kneel': card.kneel}" *ngFor="let card of cards;let i = index">
+  <img class="card" src="/assets/img/cards/character.png">
+</div>
+

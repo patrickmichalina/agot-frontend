@@ -1,32 +1,16 @@
 <div class="game-container">
 <img src="/assets/img/cards/plot.png" style="position: absolute;left: 5px;bottom: 5px;height: 210px" alt="">
   <div class="personal">
-
-      <div class="card-row hand" style="bottom: 0">
-          <img class="card" src="/assets/img/cards/character.png" (click)="switchKneel(row1, i)" [ngClass]="{'kneel': card.kneel}" [style.right]="getLeft(row1, i)" *ngFor="let card of row1;let i = index">
-      </div>
-
-      <div class="card-row" style="bottom: 16.2%">
-          <img class="card" src="/assets/img/cards/character.png" (click)="switchKneel(row2, i)" [ngClass]="{'kneel': card.kneel}" [style.right]="getLeft(row2, i)" *ngFor="let card of row2;let i = index">
-      </div>
-      <div class="card-row" style="bottom: 32.4%">
-          <img class="card" src="/assets/img/cards/character.png" (click)="switchKneel(row3, i)" [ngClass]="{'kneel': card.kneel}" [style.right]="getLeft(row3, i)" *ngFor="let card of row3;let i = index">
-      </div>
+      <row [cards]="row1" style="bottom: 0"></row>
+      <row [cards]="row2" style="bottom: 16.2%"></row>
+      <row [cards]="row3" style="bottom: 32.4%"></row>
   </div>
 
 
 
   <div class="opponent">
-      <div class="card-row" style="top: 32.4%">
-          <img class="card" src="/assets/img/cards/character.png" (click)="switchKneel(row1, i)" [ngClass]="{'kneel': card.kneel}" [style.right]="getLeft(row1, i)" *ngFor="let card of row1;let i = index">
-      </div>
-
-      <div class="card-row" style="top: 16.2%">
-          <img class="card" src="/assets/img/cards/character.png" (click)="switchKneel(row2, i)" [ngClass]="{'kneel': card.kneel}" [style.right]="getLeft(row2, i)" *ngFor="let card of row2;let i = index">
-      </div>
-
-      <div class="card-row hand" style="top: 0">
-          <img class="card" src="/assets/img/cards/character.png" (click)="switchKneel(row3, i)" [ngClass]="{'kneel': card.kneel}" [style.right]="getLeft(row3, i)" *ngFor="let card of row3;let i = index">
-      </div>
+      <row [cards]="row4" style="top: 0"></row>
+      <row [cards]="row5" style="top: 16.2%"></row>
+      <row [cards]="row6" style="top: 32.4%"></row>
   </div>
 </div>
